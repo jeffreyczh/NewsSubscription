@@ -9,11 +9,15 @@ http.createServer(function(req, res) {
 
 function getPage(url, res) {
 	http.get(url, function(subres) {
-		subres.on('end', function (chunk) {
+		subres.on('data', function (chunk) {
+			
+			res.write('BODY: ' + chunk);
 			console.log('BODY: ' + chunk);
+			res.end();
 		});
 	}).on('error', function(e) {
 		res.write("Got error: " + e.message);
+		res.end();
 	});
-	res.end();
+	
 }
