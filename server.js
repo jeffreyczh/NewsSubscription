@@ -1,7 +1,8 @@
 var http = require('http')
 var port = process.env.PORT || 1337;
+var totalData = '';
 http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('ready...\n');
   getPage('http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html', res);
   
@@ -10,9 +11,10 @@ http.createServer(function(req, res) {
 function getPage(url, res) {
 	http.get(url, function(subres) {
 		subres.on('data', function (chunk) {
-			
-			res.write('BODY: ' + chunk);
-			console.log('BODY: ' + chunk);
+			totalData += chunk;
+		});
+		subres.on('end', function() {
+			res.write(totalData);
 			res.end();
 		});
 	}).on('error', function(e) {
