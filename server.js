@@ -1,9 +1,9 @@
 var http = require('http')
-var port = process.env.PORT || 6048;
+var port = 6048;
 var totalData = '';
 http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('ready...\n');
+  res.write('ready111...\n');
   getPage('http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html', res);
   
 }).listen(port);
