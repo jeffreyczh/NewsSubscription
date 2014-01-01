@@ -1,14 +1,18 @@
 var http = require('http')
-var port = 1337;
-var totalData = '';
+var port = process.env.PORT || 1215; // for Windows Azure to deploy
+var fileHandlers = require('./fileHandlers');
 http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('ready...\n');
-  getPage('http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html', res);
+	var favList = fileHandlers.loadFavorites('jeffreyczh');
+	res.writeHead(200, { 'Content-Type': 'text/plain' });
+	res.write(favList.toString());
+	res.end();
+  //getPage('http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html', res);
   
 }).listen(port);
 
-function getPage(url, res) {
+
+
+/*function getPage(url, res) {
 	http.get(url, function(subres) {
 		subres.on('data', function (chunk) {
 			totalData += chunk;
@@ -22,4 +26,4 @@ function getPage(url, res) {
 		res.end();
 	});
 	
-}
+}*/
