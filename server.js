@@ -1,7 +1,13 @@
-var http = require('http')
+var http = require('http');
 var port = process.env.PORT || 1215; // for Windows Azure to deploy
 var fileHandlers = require('./fileHandlers');
+
+
 http.createServer(function(req, res) {
+	res.on('close', function(){
+		console.log('the connection is closed');
+		res.write('Close!!!');
+	});
 	var favList = fileHandlers.loadFavorites('jeffreyczh');
 	res.writeHead(200, { 'Content-Type': 'text/plain' });
 	res.write(favList.toString());
