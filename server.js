@@ -4,7 +4,7 @@ var fileHandlers = require('./fileHandlers');
 
 
 http.createServer(function(req, res) {
-	res.on('close', function(){
+	res.on('finish', function(){
 		console.log('the connection is closed');
 		res.write('Close!!!');
 	});
