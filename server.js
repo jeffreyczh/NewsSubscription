@@ -1,35 +1,26 @@
 var http = require('http');
 var port = process.env.PORT || 1215; // for Windows Azure to deploy
-var fileHandlers = require('./fileHandlers');
+var url = require('url');
+var router = require('./router');
+var requestHandlers = require('./requestHandlers');
 
+var handle = {};
+handle['/updateNow'] = requestHandlers.updateNow;
 
-http.createServer(function(req, res) {
-	res.on('finish', function(){
-		console.log('the connection is closed');
-		res.write('Close!!!');
-	});
-	var favList = fileHandlers.loadFavorites('jeffreyczh');
-	res.writeHead(200, { 'Content-Type': 'text/plain' });
-	res.write(favList.toString());
-	res.end();
-  //getPage('http://csb.stanford.edu/class/public/pages/sykes_webdesign/05_simple.html', res);
-  
-}).listen(port);
+http.createServer(onRequest).listen(port);
 
+console.log('Server has started.');
 
-
-/*function getPage(url, res) {
-	http.get(url, function(subres) {
-		subres.on('data', function (chunk) {
-			totalData += chunk;
-		});
-		subres.on('end', function() {
-			res.write(totalData);
-			res.end();
-		});
-	}).on('error', function(e) {
-		res.write("Got error: " + e.message);
-		res.end();
+function onRequest(request, response) {
+	var pathName = url.parse(request.url).pathname; 
+	console.log('Request for ' + pathName + ' received.');
+	// get the post string
+	var postData = '';
+	request.on('data', function(chunk){
+		postData += chunk;
+	}).on('end', function(){
+		console.log('data: ' + postData);
+		router.route(handle, pathName, postData, response);
 	});
 	
-}*/
+}
