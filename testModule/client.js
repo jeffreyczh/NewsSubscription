@@ -1,14 +1,28 @@
 var http = require('http');
 var querystring = require('querystring');
+var fs = require('fs');
 
 
 var post_data = querystring.stringify({
     'userName': 'jeffreyczh'
 });
-
+// for local test
+/*
 var options = {
 	host: 'localhost',
 	port: 1215,
+	path: '/updateNow',
+	method: 'POST',
+	headers: {
+		'Content-Type': 'application/x-www-form-urlencoded',
+		'Content-Length': post_data.length
+	}
+};*/
+
+// for windows azure
+var options = {
+	host: 'czhnews.azurewebsites.net',
+	port: 80,
 	path: '/updateNow',
 	method: 'POST',
 	headers: {
@@ -24,10 +38,12 @@ var post_req = http.request(options, function(res) {
 		total += chunk;
 	}).on('end', function(){
 		var json_data = JSON.parse(total);
+		var str = '';
 		for (var key in json_data) {
-			console.log('Source: ' + key + ' -----');
-			console.log(json_data[key]);
+			str += 'Source: ' + key + ' -----\n';
+			str += json_data[key] + '\n';
 		}
+		fs.writeFileSync('./response_updateNow', str);
 	});
 });
 
