@@ -6,6 +6,8 @@
  var http = require('http');
  var url = require('url');
  var crypto = require('crypto');
+ var bufferhelper = require('bufferhelper');
+ var iconv = require('iconv-lite');
 
 // get the update for all favorites right now
 function updateNow(response, postData) {
@@ -46,10 +48,10 @@ function updateNow(response, postData) {
 				md5sum = crypto.createHash('md5');
 
 			}
-			var total = '';
-			
+			var bufferHelper = new bufferhelper();
 			res.on('data', function(chunk){
-				total += chunk;
+				//total += chunk;
+				bufferHelper.concat(chunk);
 				if (lm == undefined) {
 					// the response header does not contain the 'last-modified' field
 					// hash the content for further comparison
@@ -67,8 +69,10 @@ function updateNow(response, postData) {
 					// compare the versions
 					// now the two versions are different
 					// there is an update
+					var total = iconv.decode(bufferHelper.toBuffer(),'gb2312');
+					console.log(total);
 					writeBackObj[href] = total;
-					favList[href] = lm;
+					//favList[href] = lm;
 				}
 				
 				if (isGettingAllPages(checkArr))

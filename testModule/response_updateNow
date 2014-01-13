@@ -1,4 +1,47 @@
-Source: http://news.ifeng.com/rss/index.xml -----
+Source: http://www.chinanews.com/rss/scroll-news.xml -----
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/css" href="rsstyle.css"?>
+<rss version="2.0">
+<channel>
+<title>中新网即时新闻</title>
+<image>
+  <title>中新网即时新闻</title>
+  <link>http://www.chinanews.com/scroll-news/news1.html</link>
+  <url>http://www.chinanews.com/images/images1/logo2.gif</url>
+</image>
+<description></description>
+<link>http://www.chinanews.com/scroll-news/news1.html</link>
+<language>zh-cn</language>
+<item><title>纽约市议员万齐家就职 上任创市议会历史多项第一</title><link>http://www.chinanews.com/hr/2014/01-13/5730183.shtml</link><description>
+　　中新网1月13日电 据美国中文网报道，纽约日落公园第38选区市议员万齐家12日举行就职典礼，联邦参议员舒默、新上任的纽约市议长Melissa Mark-Viverito等多位要职议员到场支持，典礼还邀请华裔歌手演唱国歌。</description><pubDate>2014-01-13 15:49:35</pubDate></item><item><title>恒大新星闪亮全场 中国足球又遭“黑色三分钟”</title><link>http://www.chinanews.com/ty/2014/01-13/5730139.shtml</link><description>
+</description><pubDate>2014-01-13 15:49:31</pubDate></item><item><title>2014开年综艺战火蔓延 央视与地方卫视争高下</title><link>http://www.chinanews.com/yl/2014/01-13/5730284.shtml</link><description>
+</description><pubDate>2014-01-13 15:49:29</pubDate></item><item><title>台北警方破获毒品案 台湾制造走私大陆</title><link>http://www.chinanews.com/tw/2014/01-13/5730282.shtml</link><description>
+　　中新网1月13日电 据台湾“中央社”报道，胡姓男子趁春节前毒品供需失调，企图将三级毒品“一粒眠”销往大陆牟利。调查局与台北市警方连手破获，查获20万粒一粒眠。</description><pubDate>2014-01-13 15:49:14</pubDate></item><item><title>“食用油反复使用3次致癌物升高约10倍”非危言耸听</title><link>http://www.chinanews.com/sh/2014/01-13/5730281.shtml</link><description>
+　　年节期间，油炸食品要比平常做得多，为了省油，很多人选择反复使用一锅油。除此之外，路边的各种小吃摊，一锅油的使用次数更难测算。那么，食用油重复使用有哪些影响？最近，网上有关“食用油反复使用3次致癌物丙二醛升高10倍”的话题吸引了网民的讨论。据实验数据显示，这种说法并非虚传。</description><pubDate>2014-01-13 15:49:13</pubDate></item><item><title>六旬太婆废墟捡钢筋 楼盘突然垮塌被埋身亡</title><link>http://www.chinanews.com/sh/2014/01-13/5730278.shtml</link><description>
+　　今(13)日11时许，巴中市巴州区老观桥路一民房拆迁现场一栋楼房突然发生垮塌，一名60岁左右的老妇在捡废弃钢筋时掉进废墟，上层楼板再次坍塌，老妇被埋。</description><pubDate>2014-01-13 15:48:48</pubDate></item><item><title>孙悦两战广东男篮威力受挫 三分球9中0有失水准</title><link>http://www.chinanews.com/ty/2014/01-13/5730074.shtml</link><description>
+　　本报讯(记者陈嘉堃)在如今的北京队中，孙悦是为数不多的没有战胜过广东队的队员之一。面对一班国家队的队友，孙悦自然希望在与卫冕冠军的比赛中有出色发挥。不过常规赛两度交手，孙悦都没能发挥出高水准。</description><pubDate>2014-01-13 15:48:37</pubDate></item><item><title>美报告：全球电子战市场2020年将达156亿美元</title><link>http://www.chinanews.com/mil/2014/01-13/5730276.shtml</link><description>
+　　中新网1月13日电 据中国国防科技信息网报道，总部位于美国达拉斯的MarketsandMarkets公司发布《2014-2020年电子战市场预测分析》报告称，全球电子战市场将在2020年达到156亿美元，复合年增长率为4.5%。</description><pubDate>2014-01-13 15:48:11</pubDate></item><item><title>“诈弹”阻男友“飞走”　偏执女子获刑半年</title><link>http://www.chinanews.com/fz/2014/01-13/5730275.shtml</link><description>
+</description><pubDate>2014-01-13 15:48:08</pubDate></item><item><title>2013国产“炮灰电影”排行榜出炉(图)</title><link>http://www.chinanews.com/yl/2014/01-13/5730273.shtml</link><description>
+</description><pubDate>2014-01-13 15:47:33</pubDate></item><item><title>四川崇州人民医院医生罢工 不满遭病人家属殴打</title><link>http://www.chinanews.com/fz/2014/01-13/5730272.shtml</link><description>
+　　13午，有热心读者打来电话称，11日晚上崇州市人民医院发生病人家属殴打医生事件。四川在线记者从现场了解到，事后部分急救人员和医护人员对院方处理结果不满，产生不满情绪后，采取罢工方式，今天上午与院方沟通协调后，现已正常上班。医院一切秩序正常。(记者 赵雨欣 颜雪 摄影 李国东)</description><pubDate>2014-01-13 15:47:27</pubDate></item><item><title>北京体育大学火车票售卖处网秦送手机保大礼受追捧</title><link>http://www.chinanews.com/it/2014/01-13/5730270.shtml</link><description>
+　　中新网1月13日电   1月11日-12日，网秦在北京的上地体育大学附近火车票代售点推出“手机保+防盗宝”春节岁末大礼。其中，手机保是以优惠体验月的形式推出，试用者根据手机型号支付10-70元不等的单月保费，在活动期间手机意外坏了，网秦会上门免费修理，修不好则换新手机；如果没有坏，网秦还会全额给试用者退还保费。此活动仅有300个限量名额。</description><pubDate>2014-01-13 15:47:19</pubDate></item><item><title>香格里拉古城遭大火 曾被指消防安全状况不乐观</title><link>http://www.chinanews.com/cul/2014/01-13/5730269.shtml</link><description>
+　　12日，云南省香格里拉县飘起雪花，白雪覆盖的独克宗古城空气中依然有烟灰的味道。目之所及，一处处断壁残垣令人心痛。</description><pubDate>2014-01-13 15:47:05</pubDate></item><item><title>离异夫妻四年打三场官司 法官调解重塑和平</title><link>http://www.chinanews.com/sh/2014/01-13/5730268.shtml</link><description>
+　　协议离婚“和平”分手后，一对离异夫妻却在四年间连打了三场官司。</description><pubDate>2014-01-13 15:46:59</pubDate></item><item><title>成都商报：我们必须“关注张艺谋的创作”吗</title><link>http://www.chinanews.com/sh/2014/01-13/5730266.shtml</link><description>
+　　卫计委新闻发言人姚宏文日前就张艺谋超生受罚一事表示，此事地方计划生育部门已经依法依规处理，张是著名的艺术家，请大家更多地关注他的创作。</description><pubDate>2014-01-13 15:46:50</pubDate></item><item><title>成都商报：火车票实名制的前提是票务信息公开</title><link>http://www.chinanews.com/sh/2014/01-13/5730263.shtml</link><description>
+　　11日，媒体报道福州一网友分别用日本动漫人物名“冴月麟”、“东风谷早苗”购买两张动车票，顺利往返福州站至福州南站之间，引发很大关注。于是有记者亲身体验，用“西门吹雪”等作为车票上的人名，在12306网站顺利订票，随后取票、乘车，一路无阻。针对为什么车票上的名字和身份证上的名字不符仍可乘车的问题，福州火车站一位工作人员表示，工作中经常遇到乘客在12306网站上订票时名字出错现象，为方便乘客出行，只要身份证号码正确，火车站一般都会让乘客上车。</description><pubDate>2014-01-13 15:46:22</pubDate></item><item><title>金隅客场完败遭广东双杀 全队热盼马布里复出</title><link>http://www.chinanews.com/ty/2014/01-13/5730037.shtml</link><description>
+　　本赛季遭遇广东队双杀，使得北京全队上下更加想念场边观战的马布里，盼望他早日复出。</description><pubDate>2014-01-13 15:46:19</pubDate></item><item><title>胜利股份剥离生物资产 加码天然气业务</title><link>http://www.chinanews.com/stock/2014/01-13/5730262.shtml</link><description>
+　　停牌已一个礼拜的胜利股份（000407，前收盘价5.44元）今日发布公告称，公司拟转让济南胜利生物工程有限公司（以下简称济南生物）100%股权。</description><pubDate>2014-01-13 15:46:17</pubDate></item><item><title>本周解禁市值约208亿 华锐风电解禁市值达72.39亿</title><link>http://www.chinanews.com/stock/2014/01-13/5730261.shtml</link><description>
+     根据沪深交易所的安排，本周两市有25家公司共计33.46亿解禁股上市流通，解禁市值为208.25亿元，为本年度适中水平。</description><pubDate>2014-01-13 15:45:50</pubDate></item><item><title>阿的江：会给王治郅一个独一无二退役仪式 </title><link>http://www.chinanews.com/ty/2014/01-13/5730024.shtml</link><description>
+　　本报讯(记者陈嘉堃)昨晚在八一男篮主场对阵上海男篮赛后的新闻发布会上，八一队主帅阿的江确认，本赛季结束之后王治郅将宣布退役。</description><pubDate>2014-01-13 15:45:45</pubDate></item><item><title>上海开庭审理“六死四伤”枪击案 被告人被提起公诉</title><link>http://www.chinanews.com/fz/2014/01-13/5730260.shtml</link><description>
+　　一天之内4次出手杀人，造成6死4伤严重后果。上海市第二中级人民法院于13日公开开庭审理“6·22”上海宝山枪击案，被告人范杰明因涉嫌故意杀人、抢劫、抢劫枪支、非法买卖枪支弹药、非法持有枪支弹药“五项罪名”被提起公诉。</description><pubDate>2014-01-13 15:45:40</pubDate></item><item><title>成都商报：香格里拉一把大火源自古城功能失调症</title><link>http://www.chinanews.com/sh/2014/01-13/5730258.shtml</link><description>
+　　香格里拉古城这把大火，内生于中国很多古城镇共有的文化保护与商业开发之间的某种矛盾———即它们传承千年、弱不禁风的防灾防火功能与现代生活需求的巨大矛盾之中。这样的矛盾无时无刻不存在着，而且日益加剧。</description><pubDate>2014-01-13 15:45:21</pubDate></item><item><title>胡正跃走访澳门主要社团和澳门日报社（图）</title><link>http://www.chinanews.com/ga/2014/01-13/5730257.shtml</link><description>　　中新网1月13日电  据外交部驻澳门特别行政区特派员公署网站消息，1月6日至9日，外交部驻澳门特派员胡正跃、副特派员蔡思平率公署各部门负责人先后走访了澳门中国企业协会、工会联合总会、中华总商会、街坊总会联合会、归侨总会、妇女联合总会、中华教育会和澳门日报社等机构，代表公署拜年，受到各界的热情接待。</description><pubDate>2014-01-13 15:45:18</pubDate></item><item><title>五家公司紧急暂缓发行</title><link>http://www.chinanews.com/stock/2014/01-13/5730256.shtml</link><description>
+       拟明天网上申购的创业板新股汇金股份、东方网力、绿盟科技、恒华科技及中小板的慈铭体检，昨夜分别紧急公告：根据证监会《关于加强新股发行监管的措施》精神，暂缓新股发行或推迟刊登发行公告，此前预计的发行时间表也将调整。</description><pubDate>2014-01-13 15:45:05</pubDate></item><item><title>日本被指屠宰福岛黑牛以掩盖核泄漏遗留痕迹</title><link>http://www.chinanews.com/gj/2014/01-13/5730255.shtml</link><description>
+　　2011年日本大地震引发的福岛核事故，距今已有近3年时间，但辐射遗祸仍在陆续浮现。据香港《文汇报》1月13日报道，日本农业省最近以引发交通事故为由，大量屠宰当地日本黑牛。外界批评，政府是想借此抹去福岛核泄漏遗留下来的痕迹，意图为筹备2020年奥运会粉饰太平。</description><pubDate>2014-01-13 15:45:04</pubDate></item><item><title>侵华日军家书披露：暴行连日本人自己都看不下去</title><link>http://www.chinanews.com/gn/2014/01-13/5730254.shtml</link><description>
+　　吉林省档案馆最新整理的一批侵华日军的档案中包括许多日本人的家书，其中记录了侵华时期的各种事项，有的书信中记载，对于日军犯下的强奸妇女、虐杀儿童等残暴行为，他们自己人都看不下去。</description><pubDate>2014-01-13 15:44:56</pubDate></item><item><title>云南省红十字会救灾物资运抵独克宗古城灾区</title><link>http://www.chinanews.com/sh/2014/01-13/5730252.shtml</link><description>
+　　昨日，云南省红十字会紧急调运包括30顶帐篷、300床棉被在内的救灾物资运抵香格里拉县独克宗古城火灾灾区。</description><pubDate>2014-01-13 15:44:27</pubDate></item><item><title>网络神配音恶搞《还珠》 苏有朋笑出眼泪 </title><link>http://www.chinanews.com/yl/2014/01-13/5730156.shtml</link><description>
+</description><pubDate>2014-01-13 15:44:25</pubDate></item><item><title>“情侣”林麝现身四川凉山 夜出觅食被“偷拍”</title><link>http://www.chinanews.com/sh/2014/01-13/5730251.shtml</link><description>
+　　1月8日，凉山州越西县四川申果庄省级大熊猫自然保护区管理处工作人员在整理保护区内红外线相机拍摄的图片时，发现大量野生保护动物的照片：首次拍到大熊猫正面萌照，首次拍到国家一级保护动物林麝画面。这次监测所拍摄的动物是保护区建立十几年来最多的一次，此外还拍摄到藏酋猴、红腹角���、白腹锦鸡、黄喉貂、小熊猫等国家二级保护动物照片。</description><pubDate>2014-01-13 15:44:23</pubDate></item><item><title>中国的蚕丝织绣</title><link>http://www.chinanews.com/hwjy/2014/01-13/5730250.shtml</link><description>
+　　丝绸，是中国人民的伟大发明，也是中华民族对世界文明的巨大贡献。从一片桑叶，一个蚕茧，再到一缕丝线，一幅绸缎，走过了数千年的光阴。细密的丝线，经纬纵横，把大自然的宝贵馈赠和祖先的伟大智慧紧紧地交织在一起，络绎不绝，代代相传。丝绸以其特有的细腻、光滑的质感和优秀的实用性，为中国的物质文明增添了绚丽的光彩，更承载了中华民族的审美追求和精神向往。可以说，丝绸的性格，正是中国人的性格：温润、细腻、热情、浪漫、勤劳、智慧……通过丝绸之路，我们不但把丝绸传播给了全世界，也把丝绸身上所承载的中国性格，展示给了全世界。</description><pubDate>2014-01-13 15:44:14</pubDate></item>
 
-Source: http://rss.sina.com.cn/news/marquee/ddt.xml -----
-
+</channel>
+</rss>
