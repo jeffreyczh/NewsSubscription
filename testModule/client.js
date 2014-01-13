@@ -44,13 +44,9 @@ var post_req = http.request(options, function(res) {
 		for (var key in json_data) {
 			str += 'Source: ' + key + ' -----\n';
 			str += json_data[key] + '\n';
-			console.log(json_data[key]);
-			/*parseString(json_data[key], function(err, result){
-				var title = result.rss.channel[0].item[1].description[0];
-				title = iconv.encode(title, 'gb2312');
-				//title = iconv.decode(title, 'gb2312');
-				console.log('title: ' + title);
-			});*/
+			parseString(json_data[key], function(err, result){
+				console.log(util.inspect(result, false, null));
+			});
 		}
 		fs.writeFileSync('./response_updateNow', str);
 	});

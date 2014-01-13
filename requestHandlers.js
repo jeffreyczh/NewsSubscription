@@ -50,7 +50,6 @@ function updateNow(response, postData) {
 			}
 			var bufferHelper = new bufferhelper();
 			res.on('data', function(chunk){
-				//total += chunk;
 				bufferHelper.concat(chunk);
 				if (lm == undefined) {
 					// the response header does not contain the 'last-modified' field
@@ -69,10 +68,22 @@ function updateNow(response, postData) {
 					// compare the versions
 					// now the two versions are different
 					// there is an update
-					var total = iconv.decode(bufferHelper.toBuffer(),'gb2312');
-					console.log(total);
+					favList[href] = lm;
+					// encode the response text
+					var buff = bufferHelper.toBuffer();
+					// check the charset for the further encoding
+					var total = iconv.decode(bufferHelper.toBuffer(),'utf-8');
+					var charset = total.match(/xml version=.+encoding=\"(.+)\"/);
+					if (charset == null) {
+						charset = 'utf-8';
+					} else {
+						charset = charset[1];
+					}
+					if (charset != 'utf-8') {
+						total = iconv.decode(bufferHelper.toBuffer(),charset);
+					}
 					writeBackObj[href] = total;
-					//favList[href] = lm;
+					
 				}
 				
 				if (isGettingAllPages(checkArr))
