@@ -5,6 +5,7 @@
  var fileHandlers = require('./fileHandlers');
  var http = require('http');
  var url = require('url');
+ var crypto = require('crypto');
 
 // get the update for all favorites right now
 function updateNow(response, postData) {
@@ -18,11 +19,16 @@ function updateNow(response, postData) {
 		var urlObj = url.parse(href);
 		var options = {
 			host: urlObj.host,
-			headers: {
-				'If-Modified-Since': favList[href]
-			},
 			path: urlObj.path
 		};
+		var ims = favList[href];
+		if (ims.indexOf(' ') != -1) {
+			// the 'ims' is not an MD5
+			// which means the website supports 'last-modified' field in the response header
+			options.headers = {
+				'If-Modified-Since': ims
+			};
+		}
 		getPage(options, href);
 	}
 
@@ -32,14 +38,39 @@ function updateNow(response, postData) {
 		http.get(options, function(res) {
 			console.log('GET from ' + href + ' -------');
 			console.log('code: ' + res.statusCode);
-			favList[href] = res.headers['last-modified'];
-			
+			var md5sum = '';
+			var lm = res.headers['last-modified'];
+			if (lm == undefined) {
+				// the response header does not contain the 'last-modified' field
+				// hash the content for further comparison
+				md5sum = crypto.createHash('md5');
+
+			}
 			var total = '';
+			
 			res.on('data', function(chunk){
 				total += chunk;
+				if (lm == undefined) {
+					// the response header does not contain the 'last-modified' field
+					// hash the content for further comparison
+					md5sum.update(chunk);
+				}
 			}).on('end', function(){
-				writeBackObj[href] = total;
+				writeBackObj[href] = '';
 				checkArr[href] = true;
+				if (lm == undefined) {
+					// the response header does not contain the 'last-modified' field
+					// hash the content for further comparison
+					lm = md5sum.digest('hex');
+				}
+				if (lm != favList[href]) {
+					// compare the versions
+					// now the two versions are different
+					// there is an update
+					writeBackObj[href] = total;
+					favList[href] = lm;
+				}
+				
 				if (isGettingAllPages(checkArr))
 				{
 					// all favorites' responses are obtained
